@@ -5,11 +5,11 @@ u,d,t,p,k:real;
 begin
     clrscr;
     writeln('Programa para calcular promedio por Rafael Vela');
-    writeln('Ingresa la calificación del primer parcial');
+    writeln('Ingresa la calificacion del primer parcial');
     read(u);
-    writeln('Ingresa la calificación del segundo parcial');
+    writeln('Ingresa la calificacion del segundo parcial');
     read(d);
-    writeln('Ingresa la calificación del tercer parcial');
+    writeln('Ingresa la calificacion del tercer parcial');
     read(t);
     k:=u+d+t;
     p:=k/3;
