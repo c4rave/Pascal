@@ -1,0 +1,18 @@
+program manzanas;
+uses crt;
+const
+  c = 25;
+  m = 5000;
+var
+  t:real;
+begin
+
+  clrscr;
+  writeln ('Programa para ayudar al granjero por Rafael Vela, ');
+  writeln ('Tenemos 500 manzanas, entonces...' );
+  t:=m/c;
+  writeln ('Necesitas ',t:5:2,' cajas');
+  readln;
+  readln;
+
+end.
