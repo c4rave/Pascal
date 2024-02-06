@@ -2,14 +2,20 @@ program suma;
 uses crt;
 var
  m,n,a:integer;
+ opcion:char;
 begin
   clrscr;
-  write ('Programa para sumar dos numeros, Por Rafael Vela');
-  write ('Introduce el primer numero ');
-  read (m);
-  write ('Introduce el segundo numero ');
-  read (n);
-  a:=m+n;
-  write ('El resultado es: ', a);
-  READLN;
-END.
+  repeat
+    writeln ('Programa para sumar dos numeros, Por Rafael Vela');
+    writeln ('Introduce el primer numero ');
+    readln (m);
+    writeln ('Introduce el segundo numero ');
+    readln (n);
+    a:=m+n;
+    writeln ('El resultado es: ', a);
+    writeln('Quieres sumar 2 numeros otra vez? s/n  ');
+    readln(opcion);
+  until (opcion='n');
+  end.
+
+end.
