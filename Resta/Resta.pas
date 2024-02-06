@@ -1,15 +1,21 @@
 program resta;
 uses crt;
 var
-  m,n,a:integer;
+  m,q,a:integer;
+  opcion:char;
 begin
-  write ('Programa para restar 2 numeros, por Rafael Vela');
-  write ('Introduce el primer numero ');
-  read (m);
-  write ('Introduce el segundo numero ');
-  read (n);
-  A:=m-n;
-  write ('El resultado es: ', a);
+  clrscr;
+  repeat
+    writeln ('Programa para restar 2 numeros, por Rafael Vela');
+    writeln ('Introduce el primer numero ');
+    readln (m);
+    writeln ('Introduce el segundo numero ');
+    readln (q);
+    A:=m-q;
+    writeln ('El resultado es: ', a);
+    writeln ('Quieres hacer otra resta? s/n  ');
+    readln(opcion);
+  until(opcion='n');
 End.
 
 
