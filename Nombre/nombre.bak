@@ -1,0 +1,17 @@
+program nombre;
+uses crt;
+const 
+    N = Rafael;
+begin
+    writeln('Programa para reconocer a alguien en especifico');
+    writeln('Escribe tu nombre: ');
+    readln(R);
+    if N = Rafael then
+    begin
+        write('Eres super inteligente y guapisimo');
+    end
+        else
+    begin
+        write('Tu estas chistoso');
+    end;
+end.
