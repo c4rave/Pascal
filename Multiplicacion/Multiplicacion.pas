@@ -1,15 +1,20 @@
-program division;
+program Multiplicacion;
 uses crt;
 var
   m,n,a:Integer;
+  opcion:char;
 begin
-  clrscr;
-  write ('Programa para multiplicar 2 numeros, por Rafael Vela');
-  write ('Escribe un numero ');
-  read (m);
-  write ('Escribe el otro numero ');
-  read (n);
-  a:=m*n;
-  write ('El resultado es ', a);
-readln;
+clrscr;
+  repeat
+    writeln ('Programa para multiplicar 2 numeros, por Rafael Vela');
+    writeln ('Escribe un numero ');
+    readln (m);
+    writeln ('Escribe el otro numero ');
+    readln (n);
+    a:=m*n;
+    writeln ('El resultado es ', a);
+    writeln('Quieres multiplicar 2 numeros otra vez? s/n  ');
+    readln(opcion);
+  until(opcion='n');
+  end.
 end.
