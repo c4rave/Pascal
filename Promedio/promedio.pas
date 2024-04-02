@@ -1,7 +1,7 @@
 program promedio;
 uses crt,math;
 var
-u,d,t,a,c,p,k:real; (*Cada variable es para una calificación distinta*)
+u,d,t,a,c,p,k:real; (*Cada variable es para una calificacion distinta*)
 opcion:char; (*para repetir el programa*)
 begin
     clrscr;
@@ -22,5 +22,6 @@ begin
         writeln('Tu promedio es: ',p:2:2);
         writeln('Quieres sacar otro promedio? s/n  ');
         readln(opcion);
-    until(opcion='n');
+        until(opcion='n');
+        end.
 end.
